@@ -5,13 +5,14 @@
 }
 
 body {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color:aliceblue;
 }
 
 .nav-menu {
     width: 100%;
     height: 4rem;
-    background-color: #025486;
+    background-color:#015485;
     display: flex;
     justify-content: space-between;
 }
@@ -52,7 +53,11 @@ body {
 
 .menu-item p {
     margin-top: .3rem;
-    opacity: .8;
+    font-weight:normal;
+    
+}
+.menu-item i{
+    margin-left: 5px;
 }
 
 .other-detail-menu {
@@ -78,7 +83,9 @@ body {
 .arrow {
     margin-left: .8rem;
 }
-
+.sub-header{
+    background-color: white;
+}
 .sub-header ul {
     background-color: #fafcfb;
     display: flex;
@@ -87,6 +94,7 @@ body {
 .sub-header li {
     display: flex;
     padding: 9px 6.5px;
+   
 }
 
 .sub-header p {
@@ -100,7 +108,7 @@ body {
 .sub-header i {
     font-size: .8rem;
     color: #025486;
-    ;
+    
 }
 
 .cross {
@@ -119,22 +127,146 @@ body {
 
 .input-field {
     margin-right: -1rem;
+    
+}
+.invoice-outer{
+    width: 100%;
+    box-shadow: 1px 0px .8px grey;
 }
 
 .invoice {
     display: flex;
-    margin-left: 2rem;
+    width: 100%;
+    background-color: rgba(255,255,255,255);
+    padding: .5rem;
+    box-shadow: 1px 0px .8px grey;
+   
 }
 
 .input-div {
     margin-left: 2rem;
+    outline: none !important;
+    
 }
+.input-div i{
+    margin-left: -3px;
+} 
+
 
 .invoice p {
     margin-left: .5rem;
+    color:  #2596be;
+    font-size: .9rem;
 }
 
-.invoice i {
+.invoice .side-arrow {
+    font-size: 10px;
+   margin-top: 5px;
+   padding-left: 18px;
+   
+}
+.input-field{
+    border:1px solid #2596be;
+}
+.input-div ::placeholder{
+    color: #2596be;
+    font-size: 10px;
+    padding-left: 5px;
+   
+}
+.menu-item i:first-child{
+    margin-left: 2px;
+}
+.invoice-last input::placeholder{
+    padding-left: 25px;
+    font-size: 9.3px;
+    color: #2596be;
+}
+.invoice-last{
+    position: relative;
+    margin-left: auto;
+    display: flex;
+    padding-right: 40px;
+    
+   
+}
+.invoice-last .plus{
+    position: absolute;
+    padding-left: 10px;
+    font-size: 9px;
+    padding-top: 4.5px;
+    
+
+}
+.invoice-last .down-arrow{
+  position: absolute;
+  right: 70px;
+  top: 5px;
+  font-size: 10px;
+  
+
+}
+.invoice-last::placeholder{
+    margin-top: -4px;;
+}
+.invoice-last .list-symbol{
+    margin-left: 6px;
+    
+}
+.input-invoice{
+    border: 1px solid #2596be;
+}
+.info-detail{
+    background-color: white;
+    box-shadow: 1px 0px .8px grey; ;
+}
+.info-detail a{
+    text-decoration: none;
+    margin-left: 18px;
+    color:#015485;
+    margin-top: 8px;
+    font-size: 10px;
+}
+.info-detail .all{
+    border:1px solid #015485;
+    border-radius: 5px;
+    width: 10px;
+    background-color: #015485;
+    color: white;
+    
+}
+
+.colour-black{
+    color: black;
+}
+.info-inner{
+    padding: 5px;
+}
+.step{
+    display: flex;
+    color:grey;
+    margin-left: 18px;
+    padding: 4.5px;
+}
+.main{
+    background-color: white;
+    margin: 9px 18px 0px 18px;
+}
+.step p{
     font-size: 12px;
-    margin-top: 4px;
+    margin-left: 8px;
+}
+.step .step-list{
+    list-style-type: none;
+    display: flex;
+
+}
+.step li{
+    margin-left: 10px;
+}
+.step .arrow-space{
+    padding:10px;
+}
+.step-list .li:last-child{
+    color:black;
 }
