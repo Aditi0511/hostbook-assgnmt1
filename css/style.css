@@ -43,6 +43,7 @@ body {
     color: #e7f1f6;
     text-decoration: none;
     text-align: center;
+    display: block;
 }
 
 .menu-item li {
@@ -50,7 +51,12 @@ body {
     align-items: center;
     padding-top: 1rem;
 }
-
+.menu-item-sales{
+    background-color: white;
+}
+.menu-item-sales .sales-icon-text{
+    color: #015485;
+}
 .menu-item p {
     margin-top: .3rem;
     font-weight:normal;
@@ -146,12 +152,11 @@ body {
 .input-div {
     margin-left: 2rem;
     outline: none !important;
+    padding: 3px;
+    display: flex;
+    align-items: center;
     
 }
-.input-div i{
-    margin-left: -3px;
-} 
-
 
 .invoice p {
     margin-left: .5rem;
@@ -167,12 +172,23 @@ body {
 }
 .input-field{
     border:1px solid #2596be;
+    padding: 3px;
+    border-radius: 5px;
 }
 .input-div ::placeholder{
     color: #2596be;
     font-size: 10px;
     padding-left: 5px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
    
+}
+.input-div .arrow-below{
+    font-size: 11px;
+}
+.input-div .angle-down{
+    font-size: 5px;
 }
 .menu-item i:first-child{
     margin-left: 2px;
@@ -195,26 +211,35 @@ body {
     padding-left: 10px;
     font-size: 9px;
     padding-top: 4.5px;
-    
+    top:5px;
 
 }
 .invoice-last .down-arrow{
   position: absolute;
   right: 70px;
-  top: 5px;
+  top: 10px;
   font-size: 10px;
   
 
 }
 .invoice-last::placeholder{
-    margin-top: -4px;;
+    margin-top: -4px;
+    margin-left: 5px;
 }
 .invoice-last .list-symbol{
     margin-left: 6px;
-    
+    background-color:  #015485;
+    margin-top: 9px;
+    margin-right: -3px;
+    padding: 3px 5px 3px 5px;
+    color: white;
+    font-size: 11px;
 }
+    
+
 .input-invoice{
     border: 1px solid #2596be;
+    border-radius: 5px;
 }
 .info-detail{
     background-color: white;
@@ -223,16 +248,17 @@ body {
 .info-detail a{
     text-decoration: none;
     margin-left: 18px;
-    color:#015485;
+    color:#2596be;;
     margin-top: 8px;
     font-size: 10px;
 }
 .info-detail .all{
-    border:1px solid #015485;
+    border:1px solid  #015485;
     border-radius: 5px;
     width: 10px;
     background-color: #015485;
     color: white;
+    padding: 3px 5px 3px 5px;
     
 }
 
@@ -245,24 +271,33 @@ body {
 .step{
     display: flex;
     color:grey;
-    margin-left: 18px;
+    margin-left: 11px;
     padding: 4.5px;
 }
 .main{
     background-color: white;
     margin: 9px 18px 0px 18px;
+    border-radius: 5px;
+   
+    
+}
+.step{
+    display: flex;
+    margin-left: auto;
 }
 .step p{
     font-size: 12px;
     margin-left: 8px;
+    margin-top: 10px;
 }
 .step .step-list{
     list-style-type: none;
     display: flex;
 
+
 }
 .step li{
-    margin-left: 10px;
+    margin-left: -4px;
 }
 .step .arrow-space{
     padding:10px;
@@ -270,3 +305,141 @@ body {
 .step-list .li:last-child{
     color:black;
 }
+.step .create-sales{
+    color: black;
+}
+.step .arrow-space{
+    font-size: 13px;
+    font-weight: light;
+}
+
+.due-amount{
+   
+    font-size: 13px;
+    color:#2596be;
+   
+}
+.table-header{
+   margin-left: 9px;
+   font-size: 15px;
+}
+.div-amaunt{
+    margin-left:auto;
+}
+.divider{
+    border-top: 1px solid lightgray;
+    margin: 14px;
+}
+.ref-contact-calender{
+    display: flex;
+}
+.input-ref-contact{
+    border: 1px solid #2596be;
+    margin-left:14px; 
+    border-radius: 3px;
+  
+}
+.input-ref-contact::placeholder{
+    font-size: 10px;
+    text-align: center;
+    opacity: .6;
+} 
+.invoice-ref-contact{
+    position: relative;
+}
+.search-icon{
+    position: absolute;
+    font-size: 10px;
+    color: #2596be ;
+    left: 21px;
+    top:5px;
+}
+.calender{
+    display: flex;
+    position: relative;
+}
+.calender .calender-text::placeholder{
+    font-size: 9px;
+}
+.calender-icon{
+    font-size: 10px;
+    color: #2596be;
+    position: absolute;
+    left: 142px;
+    top: 4px;
+
+}
+.calender-text{
+    border: 1px solid #2596be;
+    margin-left:14px; 
+    border-radius: 3px;
+    margin-top: 2px;
+}
+.filter-box{
+    display:flex;
+    position: relative;
+}
+.input-filter{
+    border: 1px solid #2596be;
+    border-radius: 3px;
+    height: 15px;
+    margin-left: 30px;
+}
+.filter-box .input-filter::placeholder{
+    font-size: 11px;
+    text-align: center;
+    color: #2596be;
+}
+
+.filter-icon {
+    font-size: 10px;
+    position: absolute;
+    left: 36px;
+    top:2px;
+    color:#2596be;
+}
+.down-arrow2{
+    position: absolute;
+    left: 88px;
+    top:2px;
+    font-size: 12px;
+}
+.filters-settings{
+    display: flex;
+    margin-left:auto;
+    margin-right:10px;
+}
+.setting-box{
+    position:relative;
+    margin-left:10px;
+}
+.setting-box .settings-icon{
+    position:absolute;
+    margin-left: 10px;
+    font-size: 10px;
+    top:6px;
+    left:-6px;
+    color:#2596be;
+
+   
+}
+.input-settings{
+    font-size: 10px;
+    border: 1px solid #2596be;
+}
+.input-settings::placeholder{
+    text-align: center;
+    color: #015485;
+}
+table{
+    border-collapse: collapse;
+    margin: 14px;
+}
+td:nth-child(even), th:nth-child(even) {
+    background-color: #D6EEEE;
+  }
+
+  th, td {
+    text-align: left;
+    padding: 8px;
+  }
