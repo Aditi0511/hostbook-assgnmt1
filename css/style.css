@@ -158,92 +158,84 @@ body {
     
 }
 
-.invoice p {
-    margin-left: .5rem;
+.invoice-content {
+    margin-left:5px;
+    margin-top: 5px;   
     color:  #2596be;
-    font-size: .9rem;
+    font-size: 14px;
+
+}
+.invoice-content i{
+    margin-left:-5px;
+    margin-right: 4px;
+    margin-top: 4px;
+    padding-left: 18px;
+    font-size: 10px;
 }
 
-.invoice .side-arrow {
-    font-size: 10px;
-   margin-top: 5px;
-   padding-left: 18px;
-   
-}
+
 .input-field{
     border:1px solid #2596be;
     padding: 3px;
     border-radius: 5px;
 }
-.input-div ::placeholder{
+.dropdown1{
+    border-color:#2596be;
+    margin-left: 16px;
+    border-radius: 6px;
+    width: 86px;
+    padding: 0px 6px;
     color: #2596be;
-    font-size: 10px;
-    padding-left: 5px;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-   
-}
-.input-div .arrow-below{
     font-size: 11px;
-}
-.input-div .angle-down{
-    font-size: 5px;
-}
-.menu-item i:first-child{
-    margin-left: 2px;
-}
-.invoice-last input::placeholder{
-    padding-left: 25px;
-    font-size: 9.3px;
-    color: #2596be;
 }
 .invoice-last{
+    
     position: relative;
+    border-color:#2596be;
+    border-radius: 8px;
+    width: 86px;
+    padding: 0px 6px;
+    color: #2596be;
     margin-left: auto;
-    display: flex;
-    padding-right: 40px;
+    margin-right:45px;
+
     
-   
 }
-.invoice-last .plus{
+input:focus::placeholder {
+    color: transparent;
+  }
+ .invoice-last i{
     position: absolute;
-    padding-left: 10px;
-    font-size: 9px;
-    padding-top: 4.5px;
+    font-size: 10px;
     top:5px;
-
-}
-.invoice-last .down-arrow{
-  position: absolute;
-  right: 70px;
-  top: 10px;
-  font-size: 10px;
-  
-
-}
-.invoice-last::placeholder{
-    margin-top: -4px;
-    margin-left: 5px;
-}
-.invoice-last .list-symbol{
-    margin-left: 6px;
-    background-color:  #015485;
-    margin-top: 6px;
-    margin-bottom: 4px;
-    margin-right: -3px;
-    padding: 3px 5px 3px 5px;
-    color: white;
-    font-size: 11px;
-    border-radius:4px;
-
-}
+    padding: 0px 6px;
     
+ }
+ .dropdown2{
+    position:relative;
+    border-radius: 6px;
+    width: 86px;
+    padding: 4px 6px;
+    color: #2596be;
+    border-color:#2596be;
+    font-size: 11px;
 
-.input-invoice{
-    border: 1px solid #2596be;
-    border-radius: 5px;
-}
+ }
+ .dropdown2 option{
+    position:absolute;
+    left: 5px;
+ }
+ .icon2{
+    margin-left:90px;
+    background-color: #015485;
+    color: white;
+    border:1px solid  #015485;
+    border-radius: 3px;
+    width: 22px;
+
+ }
+
+
 .info-detail{
     background-color: white;
     box-shadow: 1px 0px .8px grey; ;
@@ -251,7 +243,7 @@ body {
 .info-detail a{
     text-decoration: none;
     margin-left: 18px;
-    color:#2596be;;
+    color:#2596be;
     margin-top: 8px;
     font-size: 10px;
 }
@@ -336,6 +328,7 @@ body {
 }
 .ref-contact-calender{
     display: flex;
+
 }
 .input-ref-contact{
     border: 1px solid #2596be;
@@ -351,13 +344,16 @@ body {
 } 
 .invoice-ref-contact{
     position: relative;
+    
 }
+
 .search-icon{
     position: absolute;
     font-size: 10px;
     color: #2596be ;
     left: 21px;
     top:9px;
+   
 }
 .calender{
     display: flex;
@@ -501,6 +497,7 @@ tr:nth-child(odd) {
  .foot a{
     text-decoration: none;
     margin-left: 50px;
+    margin-right: 9px;
  }
  .cancelled span{
     color:#f48685;
